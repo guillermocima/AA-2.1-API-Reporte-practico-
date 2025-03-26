@@ -1,0 +1,126 @@
+[
+    {
+        "id": "0001",
+        "tipo": "taco",
+        "nombre": "Taco lechon",
+        "precio": 20.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Puerco",
+                "preparacion": "Horneado"
+            },
+            "salsa": {
+                "nombre": "Tomate verde",
+                "picor": "Medio"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": [
+                        "Cebolla blanca",
+                        "Cilantro",
+                        "Naranja",
+                        "Sal"
+                    ]
+                },
+                {
+                    "nombre": "Guacamole",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": [
+                        "Aguacate",
+                        "Jugo de limon",
+                        "Sal",
+                        "Cebolla",
+                        "Cilantro"
+                    ]
+                }
+            ]
+        }
+    },
+
+        {
+            "id": "0002",
+            "tipo": "taco",
+            "nombre": "Taco al pastor",
+            "precio": 22.50,
+            "ingredientes": {
+                "proteina": {
+                    "nombre": "Cerdo adobado",
+                    "preparacion": "Asado en trompo"
+                },
+                "salsa": {
+                    "nombre": "Salsa roja",
+                    "picor": "Alto"
+                },
+                "acompañamientos": [
+                    {
+                        "nombre": "Piña",
+                        "cantidad": "3 trozos",
+                        "ingredientes": ["Piña natural"]
+                    },
+                    {
+                        "nombre": "Cebolla y cilantro",
+                        "cantidad": "1 cucharada",
+                        "ingredientes": ["Cebolla morada", "Cilantro", "Limón"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "0003",
+            "tipo": "taco",
+            "nombre": "Taco de barbacoa",
+            "precio": 25.00,
+            "ingredientes": {
+                "proteina": {
+                    "nombre": "Carne de borrego",
+                    "preparacion": "Cocido en hoyo"
+                },
+                "salsa": {
+                    "nombre": "Salsa borracha",
+                    "picor": "Bajo"
+                },
+                "acompañamientos": [
+                    {
+                        "nombre": "Consomé",
+                        "cantidad": "1 taza",
+                        "ingredientes": ["Caldo de barbacoa", "Cebolla", "Cilantro", "Limón"]
+                    },
+                    {
+                        "nombre": "Cebolla curtida",
+                        "cantidad": "1 cucharada",
+                        "ingredientes": ["Cebolla blanca", "Vinagre", "Orégano"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "0004",
+            "tipo": "taco",
+            "nombre": "Taco de pescado",
+            "precio": 28.00,
+            "ingredientes": {
+                "proteina": {
+                    "nombre": "Filete de pescado",
+                    "preparacion": "Empanizado y frito"
+                },
+                "salsa": {
+                    "nombre": "Salsa de chipotle",
+                    "picor": "Medio"
+                },
+                "acompañamientos": [
+                    {
+                        "nombre": "Repollo",
+                        "cantidad": "1/2 taza",
+                        "ingredientes": ["Repollo morado", "Mayonesa", "Crema"]
+                    },
+                    {
+                        "nombre": "Pico de gallo",
+                        "cantidad": "2 cucharadas",
+                        "ingredientes": ["Jitomate", "Cebolla", "Cilantro", "Limón"]
+                    }
+                ]
+            }
+        }
+]

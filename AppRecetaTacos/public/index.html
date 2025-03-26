@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TacosMx</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Tacoschidos</h1>
+
+  <form id="Form" class="buttons">
+    <button type="button" data-type="Puerco">🐷</button>
+    <button type="button" data-type="Pastor">🌮</button>
+    <button type="button" data-type="barbacoa">🐂</button>
+    <button type="button" data-type="pescado">🐟</button>
+  </form>
+
+  <div id="Container"></div>
+
+  <script>
+    document.querySelectorAll("#Form button").forEach(button => {
+      button.addEventListener("click", async (event) => {
+        const type = event.target.getAttribute("data-type").toLowerCase();
+        
+        try {
+            const response = await fetch(`/receta/${type}`);
+          const receta = await response.json();
+
+          const contenedor = document.getElementById("Container"); 
+          if (receta.error) {
+            contenedor.innerHTML = "<h2>Receta no encontrada</h2>";
+          } else {
+            contenedor.innerHTML = `
+              <h2>${receta.nombre}</h2>
+              <h3>Ingredientes:</h3>
+              <ul id="ingredientesLista">
+                <li>Carne de: ${receta.ingredientes.proteina.nombre}, Modo preparación: ${receta.ingredientes.proteina.preparacion}</li>
+                <li>Salsa: ${receta.ingredientes.salsa.nombre} (${receta.ingredientes.salsa.picor})</li>
+                ${receta.ingredientes.acompañamientos.map(acompañamiento => `<li>Acompañamiento: ${acompañamiento.cantidad} : ${acompañamiento.nombre}</li>`).join("")}
+              </ul>`;
+          }
+        } catch (error) {
+          console.error("Error al obtener la receta:", error);
+          document.getElementById("Container").innerHTML = "<h2>Error al cargar la receta</h2>";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
