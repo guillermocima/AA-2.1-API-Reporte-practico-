@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias de ISC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Materias de la carrera ISC</h1>
+            <p>Selecciona un tema para ver sus detalles y prácticas recomendadas</p>
+        </header>
+
+        <section id="temas-container" class="temas-grid">
+            <!-- Los temas se cargarán aquí dinámicamente -->
+        </section>
+
+        <section id="tema-detalle" class="hidden">
+            <button id="volver-btn" class="btn-volver">← Volver a los temas</button>
+            <div class="tema-info">
+                <h2 id="tema-nombre"></h2>
+                <p id="tema-descripcion"></p>
+                <div class="palabras-clave">
+                    <h3>Palabras clave:</h3>
+                    <ul id="tema-palabras"></ul>
+                </div>
+            </div>
+
+            <div class="practicas-container">
+                <h3>Prácticas recomendadas:</h3>
+                <div id="practicas-list" class="practicas-grid">
+                    <!-- Las prácticas se cargarán aquí dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

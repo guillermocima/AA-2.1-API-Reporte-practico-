@@ -1,0 +1,94 @@
+{
+    "temas": [
+      {
+        "id": 1,
+        "nombre": "Programación de dispositivos móviles",
+        "descripcion": "Fundamentos del desarrollo de aplicaciones para plataformas móviles.",
+        "palabrasClaves": ["Android", "iOS", "Flutter", "React Native", "APIs móviles"],
+        "practicas": [
+          {
+            "titulo": "Primera App móvil",
+            "descripcion": "Crear una aplicación simple que muestre 'Hola Mundo' en un dispositivo móvil.",
+            "objetivo": "Familiarizarse con el entorno de desarrollo móvil."
+          },
+          {
+            "titulo": "App de calculadora",
+            "descripcion": "Implementar una calculadora funcional para dispositivos móviles.",
+            "objetivo": "Aprender a manejar interfaces de usuario y lógica básica en apps móviles."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Estructuras de Datos",
+        "descripcion": "Estudio de las principales estructuras de datos y su implementación.",
+        "palabrasClaves": ["arrays", "listas", "árboles", "grafos"],
+        "practicas": [
+          {
+            "titulo": "Implementación de Lista Enlazada",
+            "descripcion": "Crear una lista enlazada con operaciones básicas.",
+            "objetivo": "Comprender cómo funcionan las estructuras de datos dinámicas."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Química",
+        "descripcion": "Estudio de la composición, estructura y propiedades de la materia.",
+        "palabrasClaves": ["átomos", "moléculas", "reacciones", "compuestos", "tabla periódica"],
+        "practicas": [
+          {
+            "titulo": "Identificación de Compuestos",
+            "descripcion": "Realizar experimentos para identificar compuestos químicos comunes.",
+            "objetivo": "Aprender técnicas básicas de laboratorio y reconocimiento de sustancias."
+          },
+          {
+            "titulo": "Balanceo de Ecuaciones",
+            "descripcion": "Practicar el balanceo de ecuaciones químicas sencillas.",
+            "objetivo": "Comprender la ley de conservación de la masa en reacciones químicas."
+          },
+          {
+            "titulo": "Análisis de pH",
+            "descripcion": "Medir el pH de diversas sustancias cotidianas.",
+            "objetivo": "Entender el concepto de acidez y basicidad."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Bases de Datos",
+        "descripcion": "Principios de diseño y consulta de bases de datos relacionales.",
+        "palabrasClaves": ["SQL", "MySQL", "normalización", "índices"],
+        "practicas": [
+          {
+            "titulo": "Diseño de Base de Datos",
+            "descripcion": "Modelar una base de datos para un sistema de biblioteca.",
+            "objetivo": "Aprender a crear diagramas entidad-relación."
+          },
+          {
+            "titulo": "Consultas Avanzadas",
+            "descripcion": "Implementar consultas SQL con joins y subconsultas.",
+            "objetivo": "Dominar operaciones complejas en SQL."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "Inteligencia Artificial",
+        "descripcion": "Introducción a los conceptos fundamentales de machine learning.",
+        "palabrasClaves": ["Python", "scikit-learn", "redes neuronales", "pandas"],
+        "practicas": [
+          {
+            "titulo": "Clasificador de Flores",
+            "descripcion": "Implementar un modelo que clasifique especies de flores Iris.",
+            "objetivo": "Entender los algoritmos de clasificación básica."
+          },
+          {
+            "titulo": "Reconocimiento de Dígitos",
+            "descripcion": "Crear un modelo que reconozca dígitos escritos a mano.",
+            "objetivo": "Introducción a redes neuronales convolucionales."
+          }
+        ]
+      }
+    ]
+  }
